@@ -8,10 +8,12 @@ import { access, readdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
 // Nitro writes the SSR chunks to a different folder per preset: `.output` for the
-// node / cloudflare builds, `.netlify/functions-internal` for the netlify preset.
+// node / cloudflare builds, `.netlify/functions-internal` for the netlify preset,
+// `.vercel/output/functions/__server.func` for the vercel preset.
 const candidateDirectories = [
   ".output/server/_ssr",
   ".netlify/functions-internal/server/_ssr",
+  ".vercel/output/functions/__server.func/_ssr",
 ].map((dir) => resolve(process.cwd(), dir));
 const helper = `var __exportAll = (all, no_symbols) => {
 \tlet target = {};

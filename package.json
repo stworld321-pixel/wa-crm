@@ -11,10 +11,14 @@
   "directories": {
     "doc": "docs"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "node scripts/build-cloudflare.mjs",
     "build:server": "vite build",
+    "build:vercel": "vite build && npm run postbuild",
     "postbuild": "node scripts/fix-ssr-export-all-cycle.mjs && node scripts/copy-docs-to-output.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",

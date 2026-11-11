@@ -453,7 +453,7 @@ function InboxDemo() {
           </span>
         </div>
         <div className="flex items-center gap-1">
-          <span className="inline-block size-1.5 animate-pulse rounded-full bg-emerald-400" />
+          <span className="inline-block size-1.5 animate-pulse rounded-full bg-blue-400" />
           <span className="text-[11px] text-muted-foreground">3 agents online</span>
         </div>
       </div>
@@ -827,7 +827,7 @@ function BotDemo() {
         </div>
         <div>
           <p className="text-[11px] font-semibold leading-none text-foreground">AI Assistant</p>
-          <p className="mt-0.5 text-[11px] leading-none text-emerald-500">● Online</p>
+          <p className="mt-0.5 text-[11px] leading-none text-blue-500">● Online</p>
         </div>
         <div className="ml-auto flex items-center gap-1 rounded-full bg-muted px-2 py-1">
           <Database className="size-2.5 text-whatsapp" />
@@ -918,7 +918,7 @@ function CampaignDemo() {
             <Users className="size-3" /> Premium customers · 1,240 contacts
           </p>
         </div>
-        <span className="rounded-full bg-emerald-500/10 px-2 py-1 text-[11px] font-semibold text-emerald-600">
+        <span className="rounded-full bg-blue-500/10 px-2 py-1 text-[11px] font-semibold text-blue-600">
           Completed
         </span>
       </div>
@@ -2801,7 +2801,7 @@ function IndustryUseCases() {
       icon: ShoppingCart,
       title: "E-commerce & Retail",
       desc: "Turn customer inquiries into sales with connected conversations and faster support.",
-      color: "bg-emerald-50 text-emerald-600 dark:bg-emerald-500/10 dark:text-emerald-400",
+      color: "bg-blue-50 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400",
     },
     {
       icon: Store,
@@ -3031,7 +3031,7 @@ function UnifiedInboxMockup({ active = 0 }: { active?: number }) {
   // index matches the left-hand numbered highlights (01-04) so hovering one
   // rings the matching part of the mockup. Swap for real content later.
   const zoneRing = (zone: number) =>
-    active === zone ? "ring-2 ring-inset ring-[#015941]" : "ring-2 ring-inset ring-transparent";
+    active === zone ? "ring-2 ring-inset ring-[#1e40af]" : "ring-2 ring-inset ring-transparent";
 
   const channelDots = [
     { Icon: SiWhatsapp, bg: "#25D366" },
@@ -3119,7 +3119,7 @@ function UnifiedInboxMockup({ active = 0 }: { active?: number }) {
         {/* Decorative mint blob behind the mockup */}
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-4 top-6 -z-10 h-64 w-64 rounded-full bg-emerald-200/40 blur-3xl dark:bg-emerald-500/10"
+          className="pointer-events-none absolute -right-4 top-6 -z-10 h-64 w-64 rounded-full bg-blue-200/40 blur-3xl dark:bg-blue-500/10"
         />
 
         {/* Browser chrome */}
@@ -3164,7 +3164,7 @@ function UnifiedInboxMockup({ active = 0 }: { active?: number }) {
                   {orderedConversations.map((c, i) => (
                     <div
                       key={c.name}
-                      className={`flex items-start gap-2 border-b border-border px-3 py-2.5 transition-colors duration-300 ${i === 0 ? "bg-emerald-50 dark:bg-emerald-500/10" : ""}`}
+                      className={`flex items-start gap-2 border-b border-border px-3 py-2.5 transition-colors duration-300 ${i === 0 ? "bg-blue-50 dark:bg-blue-500/10" : ""}`}
                     >
                       <span
                         className="flex size-7 shrink-0 items-center justify-center rounded-full text-white"
@@ -3198,7 +3198,7 @@ function UnifiedInboxMockup({ active = 0 }: { active?: number }) {
                   <div className="flex items-center gap-2 border-b border-border px-4 py-2.5">
                     <span className="size-6 rounded-full bg-muted" />
                     <p className="text-[11px] font-semibold text-foreground">{openContactName}</p>
-                    <span className="ml-auto size-1.5 rounded-full bg-emerald-500" />
+                    <span className="ml-auto size-1.5 rounded-full bg-blue-500" />
                   </div>
                   <div className="flex-1 space-y-2 overflow-hidden px-4 py-3">
                     <p className="text-center text-[9px] uppercase text-muted-foreground">
@@ -3246,7 +3246,7 @@ function UnifiedInboxMockup({ active = 0 }: { active?: number }) {
                     <span className="size-6 rounded-full bg-muted" />
                     <p className="text-[11px] font-semibold text-foreground">{openContactName}</p>
                     <div className="ml-auto flex items-center -space-x-1.5">
-                      {["#015941", "#0284c7", "#d97706"].map((bg, i) => (
+                      {["#1e40af", "#0284c7", "#d97706"].map((bg, i) => (
                         <span
                           key={i}
                           className="flex size-5 items-center justify-center rounded-full border-2 border-background text-[7px] font-semibold text-white"
@@ -3332,7 +3332,7 @@ function UnifiedInboxMockup({ active = 0 }: { active?: number }) {
                     <div className="flex items-center gap-2 rounded-control border border-border px-3 py-2">
                       <ShoppingCart className="size-3.5 shrink-0 text-muted-foreground" />
                       <p className="truncate text-[11px] text-foreground">
-                        Order #4471 — <span className="text-emerald-600">Delivered</span>
+                        Order #4471 — <span className="text-blue-600">Delivered</span>
                       </p>
                     </div>
                   </div>
@@ -3356,7 +3356,7 @@ function UnifiedInboxMockup({ active = 0 }: { active?: number }) {
                   </div>
                   <div className="grid min-h-0 flex-1 grid-cols-3 gap-2 overflow-hidden p-3">
                     {[
-                      { label: "Open", color: "#015941", items: ["Priya Sharma", "Marcus Webb"] },
+                      { label: "Open", color: "#1e40af", items: ["Priya Sharma", "Marcus Webb"] },
                       {
                         label: "Pending",
                         color: "#d97706",
@@ -3424,7 +3424,7 @@ function UnifiedInboxMockup({ active = 0 }: { active?: number }) {
               className="size-14 shrink-0 rounded-full"
               style={{
                 background:
-                  "conic-gradient(#015941 0 40%, #22c55e 40% 65%, #38bdf8 65% 85%, #f59e0b 85% 100%)",
+                  "conic-gradient(#1e40af 0 40%, #22c55e 40% 65%, #38bdf8 65% 85%, #f59e0b 85% 100%)",
               }}
             >
               <div className="m-auto mt-1.75 size-9 rounded-full bg-background" />
@@ -3579,7 +3579,7 @@ function CRMSalesMockup({ active = 0 }: { active?: number }) {
   // Zone call-outs matching the left-hand... now right-hand numbered
   // highlights (01-04), same placeholder pattern as the other spotlights.
   const zoneRing = (zone: number) =>
-    active === zone ? "ring-2 ring-inset ring-[#015941]" : "ring-2 ring-inset ring-transparent";
+    active === zone ? "ring-2 ring-inset ring-[#1e40af]" : "ring-2 ring-inset ring-transparent";
 
   const stats = [
     { label: "Open Leads", value: "128", sub: "+12 this week", icon: Users },
@@ -3616,9 +3616,9 @@ function CRMSalesMockup({ active = 0 }: { active?: number }) {
     {
       name: "Won",
       deals: [
-        { name: "Echo Fitness", value: "$6,300", dot: "#015941" },
-        { name: "Palmview Realty", value: "$9,100", dot: "#015941" },
-        { name: "Juniper & Co.", value: "$3,250", dot: "#015941" },
+        { name: "Echo Fitness", value: "$6,300", dot: "#1e40af" },
+        { name: "Palmview Realty", value: "$9,100", dot: "#1e40af" },
+        { name: "Juniper & Co.", value: "$3,250", dot: "#1e40af" },
       ],
     },
   ];
@@ -3671,7 +3671,7 @@ function CRMSalesMockup({ active = 0 }: { active?: number }) {
         {/* Soft mint halo, centered behind the whole mockup */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-100/60 blur-3xl dark:bg-emerald-500/10"
+          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-100/60 blur-3xl dark:bg-blue-500/10"
         />
 
         {/* Small dot-grid clusters in opposite corners, echoing the reference */}
@@ -3780,7 +3780,7 @@ function CRMSalesMockup({ active = 0 }: { active?: number }) {
                             </p>
                             <p className="truncate text-xs  text-muted-foreground">{l.contact}</p>
                           </div>
-                          <span className="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-medium text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="shrink-0 rounded-full bg-blue-50 px-2 py-0.5 text-[9px] font-medium text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             {l.tag}
                           </span>
                         </div>
@@ -3845,14 +3845,14 @@ function CRMSalesMockup({ active = 0 }: { active?: number }) {
                     }}
                   >
                     <div className="flex items-start gap-3 rounded-control border border-border bg-background p-4">
-                      <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[12px] font-semibold text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                      <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[12px] font-semibold text-primary dark:bg-blue-500/15 dark:text-blue-300">
                         PS
                       </span>
                       <div className="min-w-0 flex-1">
                         <p className="text-[12px] font-semibold text-foreground">Priya Sharma</p>
                         <p className="text-[11px] text-muted-foreground">Horizon Textiles</p>
                         <div className="mt-2 flex flex-wrap gap-1.5">
-                          <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[8.5px] font-medium text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="rounded-full bg-blue-50 px-2 py-0.5 text-[8.5px] font-medium text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             VIP
                           </span>
                           <span className="rounded-full border border-border px-2 py-0.5 text-[8.5px] text-muted-foreground">
@@ -3891,7 +3891,7 @@ function CRMSalesMockup({ active = 0 }: { active?: number }) {
                           key={s.label}
                           className="min-w-0 rounded-control border border-border bg-muted/50 p-2.5"
                         >
-                          <span className="flex size-6 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="flex size-6 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             <s.icon className="size-3.5" />
                           </span>
                           <p className="mt-1.5 truncate text-[9px] text-muted-foreground">
@@ -3910,7 +3910,7 @@ function CRMSalesMockup({ active = 0 }: { active?: number }) {
                           key={m.name}
                           className="flex items-center gap-3 rounded-control border border-border bg-background p-2.5"
                         >
-                          <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[9px] font-semibold text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[9px] font-semibold text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             {m.name
                               .split(" ")
                               .map((p) => p[0])
@@ -3944,7 +3944,7 @@ function CRMSalesMockup({ active = 0 }: { active?: number }) {
           <div className="flex items-center gap-4">
             <div
               className="flex size-14 shrink-0 items-center justify-center rounded-full"
-              style={{ background: "conic-gradient(#015941 0 68%, #e2e8f0 68% 100%)" }}
+              style={{ background: "conic-gradient(#1e40af 0 68%, #e2e8f0 68% 100%)" }}
             >
               <div className="flex size-9 items-center justify-center rounded-full bg-background text-[11px] font-semibold text-primary">
                 68%
@@ -4093,13 +4093,13 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
   // placeholder pattern as the Unified Inbox mockup — hovering a highlight
   // rings the matching part of this mockup instead of doing nothing.
   const zoneRing = (zone: number) =>
-    active === zone ? "ring-2 ring-inset ring-[#015941]" : "ring-2 ring-inset ring-transparent";
+    active === zone ? "ring-2 ring-inset ring-[#1e40af]" : "ring-2 ring-inset ring-transparent";
 
   const triggerNode = {
     icon: Zap,
     label: "Incoming Message",
     sub: "Trigger · Any channel",
-    bg: "bg-emerald-50 text-primary dark:bg-emerald-500/15 dark:text-emerald-300",
+    bg: "bg-blue-50 text-primary dark:bg-blue-500/15 dark:text-blue-300",
   };
   const conditionNode = {
     icon: GitBranch,
@@ -4112,8 +4112,8 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
       label: "Automated Reply",
       sub: "Action",
       tag: "General inquiry",
-      edge: "#015941",
-      bg: "bg-emerald-50 text-primary dark:bg-emerald-500/15 dark:text-emerald-300",
+      edge: "#1e40af",
+      bg: "bg-blue-50 text-primary dark:bg-blue-500/15 dark:text-blue-300",
     },
     {
       icon: Bot,
@@ -4164,7 +4164,7 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
         {/* Decorative mint blob behind the mockup */}
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-4 top-6 -z-10 h-64 w-64 rounded-full bg-emerald-200/40 blur-3xl dark:bg-emerald-500/10"
+          className="pointer-events-none absolute -right-4 top-6 -z-10 h-64 w-64 rounded-full bg-blue-200/40 blur-3xl dark:bg-blue-500/10"
         />
 
         {/* Browser chrome */}
@@ -4225,8 +4225,8 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
                     <span className="flex items-center gap-1.5 rounded-control border border-border px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground">
                       <Play className="size-3 fill-current" /> Test
                     </span>
-                    <span className="flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1.5 text-sm font-medium text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
-                      <span className="size-1.5 rounded-full bg-primary dark:bg-emerald-400" />
+                    <span className="flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1.5 text-sm font-medium text-primary dark:bg-blue-500/15 dark:text-blue-300">
+                      <span className="size-1.5 rounded-full bg-primary dark:bg-blue-400" />
                       100% success
                     </span>
                   </div>
@@ -4267,7 +4267,7 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
                         <path
                           d="M258,180 C300,180 300,50 330,50"
                           fill="none"
-                          stroke="#015941"
+                          stroke="#1e40af"
                           strokeWidth="2"
                         />
                         <path
@@ -4304,7 +4304,7 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
 
                       {/* Trigger node */}
                       <div
-                        className="absolute w-37 -translate-y-1/2 rounded-control border-2 border-[#015941] bg-background p-3 shadow-md ring-4 ring-[#015941]/10"
+                        className="absolute w-37 -translate-y-1/2 rounded-control border-2 border-[#1e40af] bg-background p-3 shadow-md ring-4 ring-[#1e40af]/10"
                         style={{ left: 0, top: 180 }}
                       >
                         <div className="flex items-start justify-between">
@@ -4392,7 +4392,7 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
                           key={it.label}
                           className={`flex items-center gap-2 rounded-control border px-2.5 py-2 text-[11px] font-medium ${
                             it.active
-                              ? "border-[#015941] bg-emerald-50 text-primary dark:bg-emerald-500/15 dark:text-emerald-300"
+                              ? "border-[#1e40af] bg-blue-50 text-primary dark:bg-blue-500/15 dark:text-blue-300"
                               : "border-border bg-background text-muted-foreground"
                           }`}
                         >
@@ -4457,7 +4457,7 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
                           key={r.trigger}
                           className="flex items-center gap-3 rounded-control border border-border bg-background p-3"
                         >
-                          <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-emerald-50 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-blue-50 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             <r.Icon className="size-4" />
                           </span>
                           <div className="min-w-0 flex-1">
@@ -4471,7 +4471,7 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
                           <span
                             className={`shrink-0 rounded-full px-2 py-0.5 text-[9px] font-medium ${
                               r.status === "Active"
-                                ? "bg-emerald-50 text-primary dark:bg-emerald-500/15 dark:text-emerald-300"
+                                ? "bg-blue-50 text-primary dark:bg-blue-500/15 dark:text-blue-300"
                                 : "bg-muted text-muted-foreground"
                             }`}
                           >
@@ -4491,13 +4491,13 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
                       pointerEvents: active === 3 ? "auto" : "none",
                     }}
                   >
-                    <div className="mb-3 flex items-center gap-2 rounded-control border border-[#015941]/30 bg-emerald-50 px-3 py-2.5 text-sm font-medium text-primary dark:bg-emerald-500/10 dark:text-emerald-300">
+                    <div className="mb-3 flex items-center gap-2 rounded-control border border-[#1e40af]/30 bg-blue-50 px-3 py-2.5 text-sm font-medium text-primary dark:bg-blue-500/10 dark:text-blue-300">
                       <Workflow className="size-4 shrink-0" />
                       Auto-assign by skill: Billing → Finance Team
                     </div>
                     <div className="space-y-2">
                       {[
-                        { name: "Alex Rivera", bg: "#015941", load: "3 / 5 chats", online: true },
+                        { name: "Alex Rivera", bg: "#1e40af", load: "3 / 5 chats", online: true },
                         { name: "Sarah Chen", bg: "#0284c7", load: "2 / 5 chats", online: true },
                         { name: "Marcus Lee", bg: "#d97706", load: "5 / 5 chats", online: false },
                       ].map((m) => (
@@ -4521,7 +4521,7 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
                             <p className="truncate text-xs  text-muted-foreground">{m.load}</p>
                           </div>
                           <span
-                            className={`size-2 shrink-0 rounded-full ${m.online ? "bg-emerald-500" : "bg-muted-foreground/40"}`}
+                            className={`size-2 shrink-0 rounded-full ${m.online ? "bg-blue-500" : "bg-muted-foreground/40"}`}
                           />
                         </div>
                       ))}
@@ -4564,7 +4564,7 @@ function AutomationBotsMockup({ active = 0 }: { active?: number }) {
           <div className="mt-3 grid grid-cols-2 gap-3">
             {stats.map((s) => (
               <div key={s.label} className="flex items-center gap-2">
-                <span className="flex size-7 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                <span className="flex size-7 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                   <s.icon className="size-3.5" />
                 </span>
                 <div className="min-w-0">
@@ -4711,16 +4711,16 @@ function MarketingCampaignsMockup({ active = 0 }: { active?: number }) {
   // Zone call-outs matching the right-hand numbered highlights (01-04), same
   // placeholder pattern as the other spotlights.
   const zoneRing = (zone: number) =>
-    active === zone ? "ring-2 ring-inset ring-[#015941]" : "ring-2 ring-inset ring-transparent";
+    active === zone ? "ring-2 ring-inset ring-[#1e40af]" : "ring-2 ring-inset ring-transparent";
 
   const campaigns = [
     {
       name: "New Product Launch",
       Icon: SiWhatsapp,
-      iconBg: "bg-emerald-50 text-[#25D366] dark:bg-emerald-500/15",
+      iconBg: "bg-blue-50 text-[#25D366] dark:bg-blue-500/15",
       audience: "2,480",
       status: "Sent",
-      statusCls: "bg-emerald-50 text-primary dark:bg-emerald-500/15 dark:text-emerald-300",
+      statusCls: "bg-blue-50 text-primary dark:bg-blue-500/15 dark:text-blue-300",
       sent: "Oct 10, 2026",
     },
     {
@@ -4735,7 +4735,7 @@ function MarketingCampaignsMockup({ active = 0 }: { active?: number }) {
     {
       name: "Abandoned Cart",
       Icon: SiWhatsapp,
-      iconBg: "bg-emerald-50 text-[#25D366] dark:bg-emerald-500/15",
+      iconBg: "bg-blue-50 text-[#25D366] dark:bg-blue-500/15",
       audience: "1,860",
       status: "Draft",
       statusCls: "bg-muted text-muted-foreground",
@@ -4747,7 +4747,7 @@ function MarketingCampaignsMockup({ active = 0 }: { active?: number }) {
       iconBg: "bg-sky-50 text-sky-600 dark:bg-sky-500/15",
       audience: "3,450",
       status: "Sent",
-      statusCls: "bg-emerald-50 text-primary dark:bg-emerald-500/15 dark:text-emerald-300",
+      statusCls: "bg-blue-50 text-primary dark:bg-blue-500/15 dark:text-blue-300",
       sent: "Oct 5, 2026",
     },
     {
@@ -4792,7 +4792,7 @@ function MarketingCampaignsMockup({ active = 0 }: { active?: number }) {
         {/* Soft mint halo, centered behind the whole mockup */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-100/60 blur-3xl dark:bg-emerald-500/10"
+          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-100/60 blur-3xl dark:bg-blue-500/10"
         />
 
         {/* Small dot-grid clusters in opposite corners */}
@@ -4930,7 +4930,7 @@ function MarketingCampaignsMockup({ active = 0 }: { active?: number }) {
                           key={s.name}
                           className="flex items-center gap-3 rounded-control border border-border bg-background p-3"
                         >
-                          <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             <Users className="size-4" />
                           </span>
                           <div className="min-w-0 flex-1">
@@ -4972,7 +4972,7 @@ function MarketingCampaignsMockup({ active = 0 }: { active?: number }) {
                           <div className="mt-1.5 flex items-center justify-between text-[9px] text-muted-foreground">
                             <span>{d.sent.toLocaleString()} sent</span>
                             <span>{d.delivered.toLocaleString()} delivered</span>
-                            <span className="font-medium text-primary dark:text-emerald-400">
+                            <span className="font-medium text-primary dark:text-blue-400">
                               {d.read.toLocaleString()} read
                             </span>
                           </div>
@@ -5200,7 +5200,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
   // Zone call-outs matching the left-hand numbered highlights (01-04), same
   // placeholder pattern as the Unified Inbox mockup.
   const zoneRing = (zone: number) =>
-    active === zone ? "ring-2 ring-inset ring-[#015941]" : "ring-2 ring-inset ring-transparent";
+    active === zone ? "ring-2 ring-inset ring-[#1e40af]" : "ring-2 ring-inset ring-transparent";
 
   const channels = [
     { Icon: SiWhatsapp, color: "#25D366" },
@@ -5250,7 +5250,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
   ];
 
   const overview = [
-    { label: "Messaging Apps", value: 5, dot: "bg-emerald-500" },
+    { label: "Messaging Apps", value: 5, dot: "bg-blue-500" },
     { label: "AI Providers", value: 4, dot: "bg-sky-500" },
     { label: "Payment Gateways", value: 2, dot: "bg-violet-500" },
     { label: "Webhooks", value: 1, dot: "bg-amber-500" },
@@ -5271,7 +5271,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
         {channels.map(({ Icon, color }, i) => (
           <span
             key={i}
-            className="flex size-7 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300 "
+            className="flex size-7 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300 "
             style={{ color }}
           >
             <Icon className="size-5" />
@@ -5294,13 +5294,13 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
             strokeDasharray="3 3"
           />
         ))}
-        <circle cx="200" cy="24" r="3" className="fill-[#015941]" />
+        <circle cx="200" cy="24" r="3" className="fill-[#1e40af]" />
       </svg> */}
 
         {/* Soft mint halo, centered behind the whole mockup */}
         {/* <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-100/60 blur-3xl dark:bg-emerald-500/10"
+        className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-100/60 blur-3xl dark:bg-blue-500/10"
       /> */}
 
         {/* Browser chrome */}
@@ -5416,7 +5416,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
                             </p>
                             <p className="truncate text-xs  text-muted-foreground">{c.id}</p>
                           </div>
-                          <span className="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-medium text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="shrink-0 rounded-full bg-blue-50 px-2 py-0.5 text-[9px] font-medium text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             Connected
                           </span>
                         </div>
@@ -5437,7 +5437,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
                       API Keys
                     </p>
                     <div className="mt-2 flex items-center gap-3 rounded-control border border-border bg-background p-3">
-                      <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                      <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                         <KeyRound className="size-4" />
                       </span>
                       <div className="min-w-0 flex-1">
@@ -5448,7 +5448,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
                           wacrm_live_••••••••3f2a
                         </p>
                       </div>
-                      <span className="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-medium text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                      <span className="shrink-0 rounded-full bg-blue-50 px-2 py-0.5 text-[9px] font-medium text-primary dark:bg-blue-500/15 dark:text-blue-300">
                         Active
                       </span>
                     </div>
@@ -5468,7 +5468,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
                           https://yourapp.com/webhooks/wacrm
                         </p>
                       </div>
-                      <span className="size-2 shrink-0 rounded-full bg-emerald-500" />
+                      <span className="size-2 shrink-0 rounded-full bg-blue-500" />
                     </div>
                   </div>
 
@@ -5482,7 +5482,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
                     }}
                   >
                     <div className="mb-3 flex items-center gap-2">
-                      <span className="rounded-full bg-emerald-50 px-3 py-1.5 text-sm font-medium text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                      <span className="rounded-full bg-blue-50 px-3 py-1.5 text-sm font-medium text-primary dark:bg-blue-500/15 dark:text-blue-300">
                         All Integrations
                       </span>
                       <span className="rounded-full border border-border px-3 py-1.5 text-sm text-muted-foreground">
@@ -5516,7 +5516,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
                             {it.label}
                           </p>
                           <p
-                            className={`text-[8.5px] font-medium ${it.status === "Connected" ? "text-primary dark:text-emerald-400" : "text-muted-foreground"}`}
+                            className={`text-[8.5px] font-medium ${it.status === "Connected" ? "text-primary dark:text-blue-400" : "text-muted-foreground"}`}
                           >
                             {it.status}
                           </p>
@@ -5544,7 +5544,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
                           key={w.name}
                           className="flex items-center gap-3 rounded-control border border-border bg-background p-3"
                         >
-                          <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-primary/10 text-[11px] font-semibold text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-primary/10 text-[11px] font-semibold text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             {w.name[0]}
                           </span>
                           <div className="min-w-0 flex-1">
@@ -5555,7 +5555,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
                               {w.plan} plan · {w.members} members
                             </p>
                           </div>
-                          <span className="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[9px] font-medium text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="shrink-0 rounded-full bg-blue-50 px-2 py-0.5 text-[9px] font-medium text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             Active
                           </span>
                         </div>
@@ -5575,7 +5575,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
           <p className="text-sm font-semibold text-foreground">API &amp; Webhooks</p>
           <div className="mt-3 space-y-2.5">
             <div className="flex items-center gap-2">
-              <span className="flex size-7 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+              <span className="flex size-7 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                 <Database className="size-3.5" />
               </span>
               <div className="min-w-0">
@@ -5586,7 +5586,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <span className="flex size-7 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+              <span className="flex size-7 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                 <Plug className="size-3.5" />
               </span>
               <div className="min-w-0">
@@ -5610,7 +5610,7 @@ function PlatformEcosystemMockup({ active = 0 }: { active?: number }) {
               className="flex size-16 shrink-0 items-center justify-center rounded-full"
               style={{
                 background:
-                  "conic-gradient(#015941 0 42%, #0ea5e9 42% 75%, #8b5cf6 75% 92%, #f59e0b 92% 100%)",
+                  "conic-gradient(#1e40af 0 42%, #0ea5e9 42% 75%, #8b5cf6 75% 92%, #f59e0b 92% 100%)",
               }}
             >
               <div className="flex size-11 flex-col items-center justify-center rounded-full bg-background text-center">
@@ -5844,9 +5844,9 @@ function PlatformOverviewBento() {
                 {[
                   { name: "New Lead", deal: "Horizon Textiles", value: "$2,400", dot: "#25D366" },
                   { name: "Qualified", deal: "Hilltop Logistics", value: "$5,200", dot: "#38bdf8" },
-                  { name: "Won", deal: "Echo Fitness", value: "$6,300", dot: "#015941" },
+                  { name: "Won", deal: "Echo Fitness", value: "$6,300", dot: "#1e40af" },
                   { name: "Qualified", deal: "Hilltop Logistics", value: "$5,200", dot: "#38bdf8" },
-                  { name: "Won", deal: "Echo Fitness", value: "$6,300", dot: "#015941" },
+                  { name: "Won", deal: "Echo Fitness", value: "$6,300", dot: "#1e40af" },
                   { name: "New Lead", deal: "Horizon Textiles", value: "$2,400", dot: "#25D366" },
                 ].map((stage, index) => (
                   <div
@@ -6149,7 +6149,7 @@ function WorkspaceManagementMockup({ active = 0 }: { active?: number }) {
   // Zone call-outs matching the right-hand numbered highlights (01-04), same
   // placeholder pattern as the other spotlights.
   const zoneRing = (zone: number) =>
-    active === zone ? "ring-2 ring-inset ring-[#015941]" : "ring-2 ring-inset ring-transparent";
+    active === zone ? "ring-2 ring-inset ring-[#1e40af]" : "ring-2 ring-inset ring-transparent";
 
   const roles = [
     { label: "Super Admin", tint: "bg-[#0b1220] text-white" },
@@ -6230,13 +6230,13 @@ function WorkspaceManagementMockup({ active = 0 }: { active?: number }) {
             strokeDasharray="3 3"
           />
         ))}
-        <circle cx="200" cy="20" r="3" className="fill-[#015941]" />
+        <circle cx="200" cy="20" r="3" className="fill-[#1e40af]" />
       </svg> */}
 
         {/* Soft mint halo, centered behind the whole mockup */}
         <div
           aria-hidden
-          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-100/60 blur-3xl dark:bg-emerald-500/10"
+          className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-100/60 blur-3xl dark:bg-blue-500/10"
         />
 
         {/* Floating Switch Workspace widget — zone 0: Multi-Tenant Architecture */}
@@ -6347,7 +6347,7 @@ function WorkspaceManagementMockup({ active = 0 }: { active?: number }) {
                           </div>
                           <span className="text-[8.5px] text-muted-foreground">{w.plan}</span>
                           <span className="text-[8.5px] text-muted-foreground">{w.members}</span>
-                          <span className="w-fit rounded-full bg-emerald-50 px-2 py-0.5 text-[8px] font-medium text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="w-fit rounded-full bg-blue-50 px-2 py-0.5 text-[8px] font-medium text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             Active
                           </span>
                         </div>
@@ -6370,7 +6370,7 @@ function WorkspaceManagementMockup({ active = 0 }: { active?: number }) {
                           key={m.name}
                           className="flex items-center gap-3 rounded-control border border-border bg-background p-3"
                         >
-                          <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[11px] font-semibold text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[11px] font-semibold text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             {m.name[0]}
                           </span>
                           <div className="min-w-0 flex-1">
@@ -6402,7 +6402,7 @@ function WorkspaceManagementMockup({ active = 0 }: { active?: number }) {
                           key={s.label}
                           className="flex items-center gap-3 rounded-control border border-border bg-background p-3"
                         >
-                          <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="flex size-8 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             <s.Icon className="size-4" />
                           </span>
                           <div className="min-w-0 flex-1">
@@ -6432,7 +6432,7 @@ function WorkspaceManagementMockup({ active = 0 }: { active?: number }) {
                           key={s.label}
                           className="rounded-control border border-border bg-muted/50 p-2.5"
                         >
-                          <span className="flex size-6 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                          <span className="flex size-6 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                             <s.Icon className="size-3.5" />
                           </span>
                           <p className="mt-1.5 text-base font-semibold text-foreground">
@@ -6502,7 +6502,7 @@ function WorkspaceManagementMockup({ active = 0 }: { active?: number }) {
               { label: "Team & Permissions", desc: "Invite members and set roles", Icon: Users },
             ].map((s) => (
               <div key={s.label} className="flex items-center gap-2">
-                <span className="flex size-7 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-emerald-500/15 dark:text-emerald-300">
+                <span className="flex size-7 shrink-0 items-center justify-center rounded-control bg-primary/10 text-primary dark:bg-blue-500/15 dark:text-blue-300">
                   <s.Icon className="size-3.5" />
                 </span>
                 <div className="min-w-0">
@@ -6909,14 +6909,14 @@ function Roles() {
           {roles.map((r) => (
             <div
               key={r.t}
-              className="group relative flex min-h-[180px] flex-col bg-background p-6 transition-colors duration-300 hover:bg-muted/50 dark:hover:bg-emerald-500/5 lg:col-span-3"
+              className="group relative flex min-h-[180px] flex-col bg-background p-6 transition-colors duration-300 hover:bg-muted/50 dark:hover:bg-blue-500/5 lg:col-span-3"
             >
               <div
                 aria-hidden
                 className="pointer-events-none absolute -right-10 -top-10 size-28 rounded-full bg-primary/8 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100"
               />
               <div className="relative flex items-start justify-between gap-4">
-                <span className="flex size-12 items-center justify-center rounded-control bg-primary/8 text-primary dark:text-emerald-300">
+                <span className="flex size-12 items-center justify-center rounded-control bg-primary/8 text-primary dark:text-blue-300">
                   <r.icon className="size-4.5" />
                 </span>
                 <span className="font-display text-[12px] font-semibold text-muted-foreground">
@@ -6927,17 +6927,17 @@ function Roles() {
                 {r.t}
               </h3>
               <p className="relative mt-2 text-[13px] text-muted-foreground">{r.d}</p>
-              <p className="relative mt-auto border-t border-border pt-4 text-[11px] font-semibold uppercase text-primary dark:text-emerald-400">
+              <p className="relative mt-auto border-t border-border pt-4 text-[11px] font-semibold uppercase text-primary dark:text-blue-400">
                 {r.scope}
               </p>
             </div>
           ))}
 
           {/* 06 — Client Portal */}
-          <div className="group relative overflow-hidden bg-background p-8 transition-colors duration-300 hover:bg-muted/50 dark:hover:bg-emerald-500/5 sm:col-span-2 lg:col-span-6 lg:p-8">
+          <div className="group relative overflow-hidden bg-background p-8 transition-colors duration-300 hover:bg-muted/50 dark:hover:bg-blue-500/5 sm:col-span-2 lg:col-span-6 lg:p-8">
             <div className="flex items-start justify-between gap-6">
               <div>
-                <span className="flex size-12 items-center justify-center rounded-control bg-primary/8 text-primary dark:text-emerald-300">
+                <span className="flex size-12 items-center justify-center rounded-control bg-primary/8 text-primary dark:text-blue-300">
                   <Globe2 className="size-5" />
                 </span>
                 <h3 className="mt-5 font-display text-base font-semibold text-foreground">
@@ -6965,10 +6965,10 @@ function Roles() {
           </div>
 
           {/* 07 — Developer */}
-          <div className="group relative overflow-hidden bg-background p-7 transition-colors duration-300 hover:bg-muted/50 dark:hover:bg-emerald-500/5 sm:col-span-2 lg:col-span-6 lg:p-8">
+          <div className="group relative overflow-hidden bg-background p-7 transition-colors duration-300 hover:bg-muted/50 dark:hover:bg-blue-500/5 sm:col-span-2 lg:col-span-6 lg:p-8">
             <div className="flex items-start justify-between gap-6">
               <div>
-                <span className="flex size-12 items-center justify-center rounded-control bg-primary/8 text-primary dark:text-emerald-300">
+                <span className="flex size-12 items-center justify-center rounded-control bg-primary/8 text-primary dark:text-blue-300">
                   <Plug className="size-5" />
                 </span>
                 <h3 className="mt-5 font-display text-base font-semibold leading-tight text-foreground">
@@ -6983,7 +6983,7 @@ function Roles() {
               </span>
             </div>
             <div className="mt-6 flex items-center gap-2 rounded-control border border-border bg-muted/40 px-3 py-2.5 font-mono text-[12px] font-semibold text-muted-foreground">
-              <span className="text-primary dark:text-emerald-400">POST</span>
+              <span className="text-primary dark:text-blue-400">POST</span>
               <span className="truncate">/v1/webhooks/conversation.created</span>
             </div>
           </div>
@@ -7096,7 +7096,7 @@ function Security() {
             if (!event.currentTarget.contains(event.relatedTarget)) setPaused(false);
           }}
         >
-          <div className="relative flex min-h-[340px] items-center justify-center overflow-hidden border-b border-border bg-[#f4faf6] dark:bg-emerald-950/20 lg:min-h-[515px] lg:border-b-0 lg:border-r">
+          <div className="relative flex min-h-[340px] items-center justify-center overflow-hidden border-b border-border bg-[#f4faf6] dark:bg-blue-950/20 lg:min-h-[515px] lg:border-b-0 lg:border-r">
             <div
               aria-hidden
               className="absolute inset-0 opacity-45"
@@ -7107,8 +7107,8 @@ function Security() {
                 WebkitMaskImage: "radial-gradient(circle at center, black, transparent 68%)",
               }}
             />
-            <div aria-hidden className="absolute size-72 rounded-full border border-[#015941]/10" />
-            <div aria-hidden className="absolute size-52 rounded-full border border-[#015941]/15" />
+            <div aria-hidden className="absolute size-72 rounded-full border border-[#1e40af]/10" />
+            <div aria-hidden className="absolute size-52 rounded-full border border-[#1e40af]/15" />
             <div aria-hidden className="absolute size-36 rounded-full bg-background shadow-xl" />
 
             {items.map((item, index) => {
@@ -7123,14 +7123,14 @@ function Security() {
                   }`}
                 >
                   <Icon
-                    className="size-20 text-primary dark:text-emerald-300 sm:size-24"
+                    className="size-20 text-primary dark:text-blue-300 sm:size-24"
                     strokeWidth={1.15}
                   />
                 </div>
               );
             })}
 
-            <div className="absolute left-6 top-6 flex items-center gap-2 text-[11px] font-semibold uppercase  text-primary dark:text-emerald-300 sm:left-8 sm:top-8">
+            <div className="absolute left-6 top-6 flex items-center gap-2 text-[11px] font-semibold uppercase  text-primary dark:text-blue-300 sm:left-8 sm:top-8">
               <span className="relative flex size-2">
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-[#25D366] opacity-50" />
                 <span className="relative inline-flex size-2 rounded-full bg-[#25D366]" />
@@ -7138,7 +7138,7 @@ function Security() {
               Security architecture
             </div>
 
-            <div className="absolute inset-x-6 bottom-6 flex items-center justify-between gap-4 border-t border-[#015941]/15 pt-4 sm:inset-x-8 sm:bottom-8">
+            <div className="absolute inset-x-6 bottom-6 flex items-center justify-between gap-4 border-t border-[#1e40af]/15 pt-4 sm:inset-x-8 sm:bottom-8">
               <div>
                 <p className="text-[11px] font-medium uppercase text-muted-foreground">
                   Active control
@@ -7166,12 +7166,12 @@ function Security() {
                   onMouseEnter={() => setActiveItem(index)}
                   onFocus={() => setActiveItem(index)}
                   className={`group relative block w-full overflow-hidden px-6 py-6 text-left transition-colors duration-300 sm:px-8 sm:py-6 rounded-none ${
-                    isActive ? "bg-muted/50 dark:bg-emerald-950/15" : "hover:bg-muted/50"
+                    isActive ? "bg-muted/50 dark:bg-blue-950/15" : "hover:bg-muted/50"
                   }`}
                 >
                   <span
                     aria-hidden
-                    className={`absolute inset-y-0 left-0 w-0.75 bg-primary transition-opacity duration-300 dark:bg-emerald-400 ${
+                    className={`absolute inset-y-0 left-0 w-0.75 bg-primary transition-opacity duration-300 dark:bg-blue-400 ${
                       isActive ? "opacity-100" : "opacity-0"
                     }`}
                   />
@@ -7179,7 +7179,7 @@ function Security() {
                     <span
                       className={`flex size-12 shrink-0 items-center justify-center rounded-full border transition-colors duration-300 ${
                         isActive
-                          ? "border-[#015941]/20 bg-primary text-white dark:border-emerald-400/30 dark:bg-emerald-400 dark:text-emerald-950"
+                          ? "border-[#1e40af]/20 bg-primary text-white dark:border-blue-400/30 dark:bg-blue-400 dark:text-blue-950"
                           : "border-border bg-background text-muted-foreground group-hover:text-foreground"
                       }`}
                     >
@@ -7218,7 +7218,7 @@ function Security() {
             {["Database-enforced access", "Auditable events", "Owner-controlled data"].map(
               (label) => (
                 <span key={label} className="inline-flex items-center gap-2">
-                  <Check className="size-3.5 text-primary dark:text-emerald-400" />
+                  <Check className="size-3.5 text-primary dark:text-blue-400" />
                   {label}
                 </span>
               ),
@@ -7395,7 +7395,7 @@ function Integrations() {
             >
               <div className="flex items-center justify-between gap-4">
                 <span className="flex items-center gap-3">
-                  <span className="flex size-12 items-center justify-center rounded-control bg-primary/8 text-primary dark:text-emerald-300">
+                  <span className="flex size-12 items-center justify-center rounded-control bg-primary/8 text-primary dark:text-blue-300">
                     <group.icon className="size-4" />
                   </span>
                   <span>
@@ -7463,7 +7463,7 @@ function Integrations() {
               </p>
             </div>
           </div>
-          <span className="inline-flex shrink-0 items-center gap-2 text-[11px] font-semibold uppercase text-primary dark:text-emerald-400">
+          <span className="inline-flex shrink-0 items-center gap-2 text-[11px] font-semibold uppercase text-primary dark:text-blue-400">
             Developer-ready <ArrowUpRight className="size-3.5" />
           </span>
         </div>
@@ -7686,7 +7686,7 @@ function Pricing() {
         <div className="row-bleed-marketing mt-12 grid border-y border-border bg-background p-0">
           <div className="grid items-stretch lg:grid-cols-[1fr_auto_1fr]">
             <div className="hidden items-center gap-3 border-r border-border px-8 py-5 lg:flex">
-              <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary dark:bg-emerald-400/10 dark:text-emerald-400">
+              <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary dark:bg-blue-400/10 dark:text-blue-400">
                 <Clock className="size-4.5" />
               </span>
               <span>
@@ -7734,8 +7734,8 @@ function Pricing() {
                         <span
                           className={`ml-1.5 hidden text-[11px] font-semibold uppercase sm:inline ${
                             interval === value
-                              ? "text-emerald-200"
-                              : "text-primary dark:text-emerald-400"
+                              ? "text-blue-200"
+                              : "text-primary dark:text-blue-400"
                           }`}
                         >
                           −{savingsPct}%
@@ -7756,7 +7756,7 @@ function Pricing() {
                   Upgrade, downgrade, or cancel anytime.
                 </span>
               </span>
-              <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary dark:bg-emerald-400/10 dark:text-emerald-400">
+              <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary dark:bg-blue-400/10 dark:text-blue-400">
                 <ShieldCheck className="size-4.5" />
               </span>
             </div>
@@ -7794,7 +7794,7 @@ function Pricing() {
                   key={p.id}
                   className={`group relative flex min-w-0 flex-col overflow-hidden rounded-0 border-r border-b border-border p-6 transition-all duration-300 ${isLastMobileRow ? "border-b-0" : ""} sm:border-b sm:[&:nth-child(2n)]:border-r-0 sm:p-4 ${isLastTabletRow ? "sm:border-b-0" : ""} lg:border-b lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0 ${isLastDesktopRow ? "lg:border-b-0" : ""} ${
                     p.highlight
-                    // ? "border-[#015941]/45 bg-[#eff9f2] dark:border-emerald-400/35 dark:bg-emerald-950/30"
+                    // ? "border-[#1e40af]/45 bg-[#eff9f2] dark:border-blue-400/35 dark:bg-blue-950/30"
                     // : "border-border bg-background hover:shadow-xl"
                   } ${currentPlan ? "ring-2 ring-inset ring-[#25D366]/60" : ""}`}
                 >
@@ -7836,7 +7836,7 @@ function Pricing() {
                       )}
                     </div>
                     {perMonth && (
-                      <p className="mt-1.5 text-[11px] font-medium text-primary dark:text-emerald-400">
+                      <p className="mt-1.5 text-[11px] font-medium text-primary dark:text-blue-400">
                         {perMonth} / month, billed yearly
                       </p>
                     )}
@@ -7846,7 +7846,7 @@ function Pricing() {
                       </p>
                     )}
                     {p.trial_days > 0 && !contactSales && (
-                      <p className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-full border border-[#015941]/10 bg-background/80 px-2.5 py-1 text-[11px] font-semibold text-primary dark:bg-emerald-950/50 dark:text-emerald-300">
+                      <p className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-full border border-[#1e40af]/10 bg-background/80 px-2.5 py-1 text-[11px] font-semibold text-primary dark:bg-blue-950/50 dark:text-blue-300">
                         <Clock className="size-3" />
                         {p.trial_days}-day free trial
                       </p>
@@ -7863,9 +7863,9 @@ function Pricing() {
                           key={f}
                           className="flex items-start gap-2.5 text-[12px] leading-relaxed text-foreground/75"
                         >
-                          <span className="mt-0.5 flex size-4 shrink-0 items-center justify-center rounded-full bg-primary/8 dark:bg-emerald-500/15">
+                          <span className="mt-0.5 flex size-4 shrink-0 items-center justify-center rounded-full bg-primary/8 dark:bg-blue-500/15">
                             <Check
-                              className="size-2.5 text-primary dark:text-emerald-400"
+                              className="size-2.5 text-primary dark:text-blue-400"
                               strokeWidth={2.4}
                             />
                           </span>
@@ -7921,7 +7921,7 @@ function Pricing() {
           </p>
           <Link
             to="/pricing"
-            className="inline-flex items-center gap-2 font-semibold text-[13px] text-primary transition-colors hover:text-[#087F47] dark:text-emerald-400"
+            className="inline-flex items-center gap-2 font-semibold text-[13px] text-primary transition-colors hover:text-[#087F47] dark:text-blue-400"
           >
             Compare every plan <ArrowRight className="size-3.5" />
           </Link>
@@ -7968,7 +7968,7 @@ function MarketingSection() {
           />
 
           <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/65 px-3 py-1.5 text-[12px] font-semibold text-primary shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-white/8 dark:text-emerald-300">
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/65 px-3 py-1.5 text-[12px] font-semibold text-primary shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-white/8 dark:text-blue-300">
               <Sparkles className="size-3" /> Production-ready omnichannel SaaS
             </span>
 
@@ -7987,7 +7987,7 @@ function MarketingSection() {
                   key={label}
                   className="rounded-control border border-border/75 bg-white/50 px-6 py-12 backdrop-blur-md dark:border-white/10 dark:bg-white/7"
                 >
-                  <span className="block bg-gradient-to-r from-[#015941] via-[#20a86b] to-[#6366f1] bg-clip-text font-display text-5xl font-bold text-transparent">
+                  <span className="block bg-gradient-to-r from-[#1e40af] via-[#20a86b] to-[#6366f1] bg-clip-text font-display text-5xl font-bold text-transparent">
                     {value}
                   </span>
                   <span className="mt-3 block text-[12px] font-medium text-muted-foreground">
@@ -8216,7 +8216,7 @@ function ConnectionMap() {
     {
       label: "AI models",
       Icon: Bot,
-      color: "#015941",
+      color: "#1e40af",
       x: 460,
       y: 340,
       path: "M 314 215 V 325 Q 314 340 329 340 H 460",
@@ -8262,7 +8262,7 @@ function ConnectionMap() {
           <linearGradient id="integration-signal-gradient" x1="0" y1="0" x2="1" y2="0">
             <stop offset="0%" stopColor="#25D366" stopOpacity="0" />
             <stop offset="50%" stopColor="#25D366" stopOpacity="0.9" />
-            <stop offset="100%" stopColor="#015941" stopOpacity="0" />
+            <stop offset="100%" stopColor="#1e40af" stopOpacity="0" />
           </linearGradient>
         </defs>
         {networkNodes.map((node) => (

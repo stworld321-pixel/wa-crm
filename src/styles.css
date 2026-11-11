@@ -1111,6 +1111,28 @@
   --elevation-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.6);
 }
 
+/* Landing page accent palette — blue, scoped to the landing page only.
+   The rest of the app keeps the WhatsApp-green brand accent from :root.
+   The derived tokens are redeclared (not inherited) because :root computes
+   them against its own --accent, so overriding --accent alone would leave
+   them green. */
+.landing-shadows {
+  --primary: #2563eb;
+  --primary-glow: color-mix(in oklab, var(--primary) 88%, oklch(100% 0 0) 12%);
+  --primary-muted: color-mix(in oklab, var(--primary) 10%, var(--surface));
+  --accent: #2563eb;
+  --accent-strong: color-mix(in oklab, var(--accent) 88%, black);
+  --accent-readable: color-mix(in oklab, var(--accent) 86%, black);
+  --accent-muted: color-mix(in oklab, var(--accent) 12%, var(--surface));
+}
+
+/* Dark mode lifts the blue so it still reads against the dark surface,
+   mirroring how :root lightens the green under .dark. */
+.dark .landing-shadows {
+  --primary: #60a5fa;
+  --accent: #3b82f6;
+}
+
 /* Landing hero artwork has separate palettes so its light-mode glow never
    washes the dark theme into a low-contrast grey panel. */
 .landing-hero-flow-dark,

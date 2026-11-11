@@ -33,6 +33,7 @@ import { Route as SidebarProbeRouteImport } from './routes/sidebar-probe'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as UnsubscribeRouteImport } from './routes/unsubscribe'
+import { Route as V2RouteImport } from './routes/v2'
 import { Route as WhatsappSecretOverflowProbeRouteImport } from './routes/whatsapp-secret-overflow-probe'
 import { Route as WhatsappTemplateHeaderProbeRouteImport } from './routes/whatsapp-template-header-probe'
 import { Route as AuthenticatedSuperAdminRouteImport } from './routes/_authenticated/_super-admin'
@@ -539,6 +540,11 @@ const TermsRoute = TermsRouteImport.update({
 const UnsubscribeRoute = UnsubscribeRouteImport.update({
   id: '/unsubscribe',
   path: '/unsubscribe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const V2Route = V2RouteImport.update({
+  id: '/v2',
+  path: '/v2',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WhatsappSecretOverflowProbeRoute =
@@ -2777,6 +2783,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/unsubscribe': typeof UnsubscribeRoute
+  '/v2': typeof V2Route
   '/whatsapp-secret-overflow-probe': typeof WhatsappSecretOverflowProbeRoute
   '/whatsapp-template-header-probe': typeof WhatsappTemplateHeaderProbeRoute
   '/activities': typeof AuthenticatedActivitiesRoute
@@ -3189,6 +3196,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/unsubscribe': typeof UnsubscribeRoute
+  '/v2': typeof V2Route
   '/whatsapp-secret-overflow-probe': typeof WhatsappSecretOverflowProbeRoute
   '/whatsapp-template-header-probe': typeof WhatsappTemplateHeaderProbeRoute
   '/activities': typeof AuthenticatedActivitiesRoute
@@ -3593,6 +3601,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/unsubscribe': typeof UnsubscribeRoute
+  '/v2': typeof V2Route
   '/whatsapp-secret-overflow-probe': typeof WhatsappSecretOverflowProbeRoute
   '/whatsapp-template-header-probe': typeof WhatsappTemplateHeaderProbeRoute
   '/_authenticated/_super-admin': typeof AuthenticatedSuperAdminRouteWithChildren
@@ -4008,6 +4017,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/unsubscribe'
+    | '/v2'
     | '/whatsapp-secret-overflow-probe'
     | '/whatsapp-template-header-probe'
     | '/activities'
@@ -4420,6 +4430,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/unsubscribe'
+    | '/v2'
     | '/whatsapp-secret-overflow-probe'
     | '/whatsapp-template-header-probe'
     | '/activities'
@@ -4823,6 +4834,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/unsubscribe'
+    | '/v2'
     | '/whatsapp-secret-overflow-probe'
     | '/whatsapp-template-header-probe'
     | '/_authenticated/_super-admin'
@@ -5238,6 +5250,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   UnsubscribeRoute: typeof UnsubscribeRoute
+  V2Route: typeof V2Route
   WhatsappSecretOverflowProbeRoute: typeof WhatsappSecretOverflowProbeRoute
   WhatsappTemplateHeaderProbeRoute: typeof WhatsappTemplateHeaderProbeRoute
   BookSlugRoute: typeof BookSlugRoute
@@ -5529,6 +5542,13 @@ declare module '@tanstack/react-router' {
       path: '/unsubscribe'
       fullPath: '/unsubscribe'
       preLoaderRoute: typeof UnsubscribeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/v2': {
+      id: '/v2'
+      path: '/v2'
+      fullPath: '/v2'
+      preLoaderRoute: typeof V2RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/whatsapp-secret-overflow-probe': {
@@ -9132,6 +9152,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   UnsubscribeRoute: UnsubscribeRoute,
+  V2Route: V2Route,
   WhatsappSecretOverflowProbeRoute: WhatsappSecretOverflowProbeRoute,
   WhatsappTemplateHeaderProbeRoute: WhatsappTemplateHeaderProbeRoute,
   BookSlugRoute: BookSlugRoute,

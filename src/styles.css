@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @source "../src";
 @import "tw-animate-css";
+@import "@fontsource-variable/geist";
 @import "@fontsource/inter/300.css";
 @import "@fontsource/inter/400.css";
 @import "@fontsource/inter/500.css";
@@ -1109,6 +1110,16 @@
   --elevation-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
   --elevation-xl: 0 20px 25px -5px rgb(0 0 0 / 0.45), 0 8px 10px -6px rgb(0 0 0 / 0.45);
   --elevation-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+}
+
+/* Landing v2 typography: Geist for display and body, scoped to the v2 page so
+   the rest of the app keeps Inter. font-family is set here as well as the
+   tokens, because body already resolved --font-sans to Inter and children
+   inherit that computed value, not the token. */
+.lv2 {
+  --font-display: "Geist Variable", "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Geist Variable", "Geist", ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-sans);
 }
 
 /* Landing page accent palette — blue, scoped to the landing page only.
